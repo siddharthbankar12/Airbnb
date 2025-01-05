@@ -103,7 +103,7 @@
 
 .line2 {
   font-size: 16px;
-  color: rgb(177, 173, 173);
+  color: rgb(141, 137, 137);
 }
 
 .line2 > input {
@@ -113,7 +113,7 @@
   font-size: 14px;
 
   & > input::placeholder {
-    color: rgb(177, 173, 173);
+    color: rgb(141, 137, 137);
   }
 }
 
@@ -126,6 +126,10 @@
   &:hover {
     background-color: rgb(228, 224, 224);
     border-radius: 36px;
+
+    .line2 > input {
+      background-color: rgb(228, 224, 224);
+    }
 
     .line2 > input::placeholder {
       background-color: rgb(228, 224, 224);
@@ -186,4 +190,148 @@
   justify-content: center;
   background-color: #ff385c;
   border-radius: 28px;
+}
+
+.selection {
+  margin: 15px auto 0 auto;
+  width: 90%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  /* gap: 40px; */
+  justify-content: space-between;
+}
+
+.catoptions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-family: var(--font);
+  text-align: center;
+
+  color: rgb(141, 137, 137);
+
+  & > img {
+    height: 30px;
+    width: 30px;
+  }
+
+  &:hover {
+    border-bottom: 3px solid black;
+  }
+}
+
+.filters,
+.dtbt {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 14px;
+  font-family: var(--font);
+
+  border: 1px solid rgb(228, 224, 224);
+  border-radius: 16px;
+
+  margin: 15px 0;
+  padding: 0 15px;
+
+  &:hover {
+    border: 1px solid black;
+    background-color: rgb(228, 224, 224);
+  }
+}
+
+.collections {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: var(--font);
+  font-size: 17px;
+}
+
+.carts {
+  width: calc(92% / 4);
+  /* border: 1px solid black; */
+  height: 400px;
+}
+
+.cimg {
+  background-image: url(https://a0.muscache.com/im/pictures/d8d629d7-9307-4b24-a8ae-b01d95e36124.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px 0 10px;
+  border-radius: 15px;
+}
+
+.cdetail {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headrate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cdrate {
+  display: flex;
+  align-items: center;
+}
+
+.cdprice {
+  margin-top: 10px;
+}
+
+.cdhead,
+.cdprice {
+  font-weight: 500;
+}
+
+.destance,
+.datemon {
+  color: rgb(141, 137, 137);
+}
+
+.guestfav > p {
+  border-radius: 18px;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.cimg > span {
+  padding: 5px;
+}
+
+.footer {
+  background-color: rgb(247, 247, 247);
+  height: 800px;
+}
+
+.footerone {
+  height: 40%;
+}
+
+.footertwo {
+  height: 60%;
 }
