@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Roboto Condensed", serif;
+}
+
+.header {
+  width: 100%;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  border-bottom: 1px solid rgb(215, 206, 206);
+}
+
+.navbar {
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+
+  & > div {
+    width: calc(100% / 3);
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+
+  & > div {
+    padding: 15px 20px;
+  }
+}
+
+.arbnbDetails {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.ayh {
+  font-size: 16px;
+  font-weight: 450;
+  padding: 15px 15px;
+}
+
+.locreg {
+  padding: 15px 20px;
+  margin-right: 10px;
+}
+
+.sandpro {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid rgb(215, 206, 206);
+  border-radius: 26px;
+  padding: 5px 10px;
+}
+
+.experiences:hover,
+.stays:hover,
+.ayh:hover,
+.locreg:hover {
+  background-color: rgb(246, 246, 246);
+  border-radius: 22px;
+}
+
+.sandpro:hover {
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.searchbar {
+  width: 870px;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid rgb(215, 206, 206);
+  border-radius: 48px;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+
+  & > div {
+    width: calc(100% / 3);
+  }
+}
+
+.line1 {
+  font-size: 14px;
+}
+
+.line2 {
+  font-size: 16px;
+  color: rgb(177, 173, 173);
+}
+
+.line2 > input {
+  border: none;
+  outline: none;
+  font-family: var(--font);
+  font-size: 14px;
+
+  & > input::placeholder {
+    color: rgb(177, 173, 173);
+  }
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+
+  &:hover {
+    background-color: rgb(228, 224, 224);
+    border-radius: 36px;
+
+    .line2 > input::placeholder {
+      background-color: rgb(228, 224, 224);
+    }
+  }
+}
+
+.inout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  & > div {
+    width: calc(100% / 2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & > div:hover {
+    background-color: rgb(228, 224, 224);
+    border-radius: 36px;
+  }
+}
+
+.checkindate > div,
+.checkoutdate > div {
+  border-left: 1px solid rgb(215, 206, 206);
+  border-right: 1px solid rgb(215, 206, 206);
+  padding-left: 25px;
+}
+
+.guests {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 20px;
+
+  &:hover {
+    background-color: rgb(228, 224, 224);
+    border-radius: 36px;
+  }
+}
+
+.leftgue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightgue {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff385c;
+  border-radius: 28px;
+}
