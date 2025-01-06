@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll-based Design Change</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 2000px;
+      }
+
+      .scroll-change {
+        height: 25%;
+        background-color: red;
+        transition: background-color 0.3s ease;
+      }
+
+      .scroll-change h1,
+      .scroll-change p {
+        margin: 0; /* Remove default margin for these elements */
+      }
+      .changed {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-change">
+      <h1>Scroll down to change design</h1>
+      <p>
+        Keep scrolling and watch the design change once you reach 15% of the
+        page height.
+      </p>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const scrollPercentage =
+          (window.scrollY /
+            (document.documentElement.scrollHeight - window.innerHeight)) *
+          100;
+
+        if (scrollPercentage > 15) {
+          document.querySelector(".scroll-change").classList.add("changed");
+        } else {
+          document.querySelector(".scroll-change").classList.remove("changed");
+        }
+      });
+    </script>
+  </body>
+</html>

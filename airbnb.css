@@ -9,12 +9,15 @@
 }
 
 .header {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 168px;
   display: flex;
   flex-direction: column;
   font-family: var(--font);
   border-bottom: 1px solid rgb(215, 206, 206);
+  background-color: white;
 }
 
 .navbar {
@@ -283,6 +286,7 @@
 }
 
 .cdetail {
+  padding: 0 5px;
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -326,12 +330,109 @@
 .footer {
   background-color: rgb(247, 247, 247);
   height: 800px;
+  font-family: var(--font);
 }
 
 .footerone {
-  height: 40%;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.foheading {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.foselection {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid rgb(221, 221, 221);
+  color: rgb(141, 137, 137);
+
+  & > p {
+    padding-bottom: 15px;
+    border-bottom: 2px solid transparent;
+  }
+
+  & > p:hover {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+}
+
+.foselarea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 100%;
+}
+
+.fsarea {
+  width: calc(100% / 6);
+  margin-bottom: 20px;
+
+  & > :nth-child(1) {
+    font-weight: 500;
+  }
+  & > :nth-child(2) {
+    color: rgb(141, 137, 137);
+  }
 }
 
 .footertwo {
-  height: 60%;
+  height: 50%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgb(102, 102, 102);
+}
+
+.twotop {
+  display: flex;
+}
+
+.support-section,
+.hosting-section,
+.airbnb-section {
+  width: calc(100% / 3);
+  height: 100%;
+
+  & > :nth-child(1) {
+    color: black;
+    font-weight: 500;
+  }
+
+  & > p {
+    margin-bottom: 10px;
+  }
+}
+
+.twobottom {
+  border-top: 2px solid rgb(221, 221, 221);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botleft {
+  display: flex;
+  gap: 20px;
+}
+
+.botright {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  font-size: 16px;
+}
+
+.fa-brands {
+  font-size: 20px;
 }
